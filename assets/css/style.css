@@ -1,0 +1,106 @@
+:root {
+    --purpledark:#460259;
+    --purplelight:#8807c9;
+    --purpleheader: #ead1ff;
+    --darkgray: #241824;
+    --medgray: #877887;
+    --lightgray: #c0b0c0;
+    --yellow: #ffd455;
+}
+
+* {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    font-size: 20px;
+}
+
+body {
+    background:linear-gradient(purple, black);
+}
+
+#body-layer-2 {
+    background-image:url(../images/diamond.jpeg);
+    background-repeat: repeat;
+    background-size: 10%;
+    opacity: 0.8;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(var(--purpledark), black);
+    border-bottom: 3px solid var(--medgray);
+    display:inline-flex;
+    flex-direction: row;
+}
+
+#maxwell {
+    color: var(--lightgray);
+    font-size: inherit;
+}
+
+h1 {
+    font-size: 360%;
+    padding:70px 80px 0px 80px;
+}
+
+h2 {
+    font-size: 2em;
+    padding:10px 0px;
+    color: var(--purpleheader);
+}
+
+nav {
+    display:flex;
+}
+
+nav ul {
+    float:right;
+    font-weight: bolder;
+    text-align: center;
+    list-style:none;
+    padding:70px 0px 0px 80px;
+}
+
+nav a {
+    color:var(--medgray);
+}
+
+nav a:hover {
+    color:var(--yellow);
+}
+
+main section {
+    width:75%;
+    margin: 40px auto;
+    background-color:var(--darkgray);
+}
+
+main p {
+    padding:30px;
+    text-indent: 60px;
+}
+
+hr {
+    height:3px;
+    opacity: 0.5;
+}
+
+#me {
+    width: 25%;
+    height: auto;
+    border: 5px solid var(--lightgray);
+    border-right-color: var(--medgray);
+    border-bottom-color: var(--medgray);
+    display:inline;
+    position: relative;
+    left:35%;
+    right:
+}
+
+#about-me-text {
+    display:inline;
+    width:70%;
+}
