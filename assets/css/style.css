@@ -2,10 +2,11 @@
     --purpledark:#460259;
     --purplelight:#8807c9;
     --purpleheader: #ead1ff;
-    --darkgray: #241824;
+    --darkgray: #1d191d;
     --medgray: #877887;
     --lightgray: #c0b0c0;
     --yellow: #ffd455;
+    --standard-border: 3px solid var(--medgray);
 }
 
 * {
@@ -31,9 +32,7 @@ header {
     height: 150px;
     width: 100%;
     background: linear-gradient(var(--purpledark), black);
-    border-bottom: 3px solid var(--medgray);
-    display:inline-flex;
-    flex-direction: row;
+    border-bottom: var(--standard-border);
 }
 
 #maxwell {
@@ -42,8 +41,10 @@ header {
 }
 
 h1 {
-    font-size: 360%;
-    padding:70px 80px 0px 80px;
+    position:relative;
+    font-size: 300%;
+    top: 75px;
+    left: 5%;
 }
 
 h2 {
@@ -56,20 +57,23 @@ nav {
     display:flex;
 }
 
-nav ul {
-    float:right;
+
+#links {
+    position: absolute;
+    top: 0px;
+    right: 5%;
     font-weight: bolder;
     text-align: center;
     list-style:none;
     padding:70px 0px 0px 80px;
 }
 
-nav a {
-    color:var(--medgray);
+a {
+    color:var(--yellow);
 }
 
-nav a:hover {
-    color:var(--yellow);
+a:hover {
+    color:white;
 }
 
 main section {
@@ -79,8 +83,13 @@ main section {
 }
 
 main p {
-    padding:30px;
+    padding-top:30px;
     text-indent: 60px;
+}
+
+main article {
+    width:95%;
+    margin: 0 auto;
 }
 
 hr {
@@ -91,16 +100,77 @@ hr {
 #me {
     width: 25%;
     height: auto;
+    display:block;
+    margin: 30px auto;
+    margin-bottom: 30px;
+}
+
+.bordered {
     border: 5px solid var(--lightgray);
     border-right-color: var(--medgray);
     border-bottom-color: var(--medgray);
-    display:inline;
-    position: relative;
-    left:35%;
-    right:
 }
 
-#about-me-text {
-    display:inline;
-    width:70%;
+.article-text {
+    width:90%;
+}
+
+#contact-list {
+    list-style:square;
+}
+
+#contact-list li {
+    margin: 20px 0px;
+}
+
+footer {
+    width:75%;
+    margin: 0 auto;
+    color: var(--yellow);
+    font-weight: bolder;
+    background-color: var(--darkgray);
+    text-align: center;
+    border-top: var(--standard-border);
+    border-left: var(--standard-border);
+    border-right: var(--standard-border);
+}
+
+footer p {
+    margin: 5px 0px;
+}
+
+@media screen and (max-width: 956px) {
+    h1 {
+        font-size: 248%;
+        top:85px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    * {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 310%; 
+        top: 30px;
+        left: 15%;
+    }
+    #maxwell {
+        display: block;
+    }
+    #links {
+        position: absolute;
+        font-size: 110%;
+        top: 0px;
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        left:5%;
+    }
+    #links {
+        right: 5%;
+    }
 }
