@@ -83,6 +83,10 @@ main section {
     background-color:var(--darkgray);
 }
 
+/* 
+    This is primarily used in the About Me section.
+    Could be used elsewhere if page is expanded.
+*/
 .paragraphs p {
     padding-top:30px;
     text-indent: 60px;
@@ -106,6 +110,7 @@ hr {
     margin-bottom: 30px;
 }
 
+/* For that crisp, beveled border. */
 .bordered {
     border: 5px solid var(--lightgray);
     border-right-color: var(--medgray);
@@ -155,6 +160,8 @@ footer {
 footer p {
     margin: 5px 0px;
 }
+
+/* Media queries keep the header functional at different screen sizes. */
 
 @media screen and (max-width: 956px) {
     h1 {
