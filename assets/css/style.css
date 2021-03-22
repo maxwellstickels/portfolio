@@ -7,6 +7,7 @@
     --lightgray: #c0b0c0;
     --yellow: #ffd455;
     --standard-border: 3px solid var(--medgray);
+    --small-border: 1px solid var(--medgray);
 }
 
 * {
@@ -82,7 +83,7 @@ main section {
     background-color:var(--darkgray);
 }
 
-main p {
+.paragraphs p {
     padding-top:30px;
     text-indent: 60px;
 }
@@ -98,7 +99,7 @@ hr {
 }
 
 #me {
-    width: 25%;
+    width: 35%;
     height: auto;
     display:block;
     margin: 30px auto;
@@ -113,6 +114,22 @@ hr {
 
 .article-text {
     width:90%;
+}
+
+#main-work {
+    width:70%;
+    height:auto;
+    display:inline;
+}
+
+#large-work-title {
+    background-color:var(--medgray);
+    color:inherit;
+    font-size: 80%;
+}
+
+a img:hover {
+    opacity:50%;
 }
 
 #contact-list {
@@ -131,8 +148,8 @@ footer {
     background-color: var(--darkgray);
     text-align: center;
     border-top: var(--standard-border);
-    border-left: var(--standard-border);
-    border-right: var(--standard-border);
+    border-left: var(--small-border);
+    border-right: var(--small-border);
 }
 
 footer p {
@@ -166,7 +183,19 @@ footer p {
     }
 }
 
+@media screen and (max-width: 700px) {
+    h1 {
+        left:10%;
+    }
+    #links {
+        right: 10%;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    * {
+        font-size: 15px;
+    }
     h1 {
         left:5%;
     }
