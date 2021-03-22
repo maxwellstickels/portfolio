@@ -133,6 +133,7 @@ hr {
     font-size: 80%;
 }
 
+/* This applies to the Published Work thumbnails, large and small. */
 a img:hover {
     opacity:50%;
 }
