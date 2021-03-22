@@ -122,15 +122,36 @@ hr {
 }
 
 #main-work {
-    width:70%;
-    height:auto;
-    display:inline;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-#large-work-title {
-    background-color:var(--medgray);
-    color:inherit;
-    font-size: 80%;
+.work-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* This ID applies to the section surrounding all small works. */
+#small-works {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* This CLASS applies to each and every one of the small works. */
+.small-work {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#work-title {
+    text-align:center;
 }
 
 /* This applies to the Published Work thumbnails, large and small. */
@@ -209,5 +230,8 @@ footer p {
     }
     #links {
         right: 5%;
+    }
+    .small-work {
+        width: 40%;
     }
 }
