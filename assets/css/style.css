@@ -124,8 +124,19 @@ hr {
 #main-work {
     width: 60%;
     height: auto;
+    background-color:black;
     display: block;
     margin: 0 auto;
+}
+
+#main-work a, #main-work a:visited, #main-work a:focus, #main-work a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#main-work:hover > * {
+    text-decoration: none;
+    color: var(--yellow);
 }
 
 .work-img {
